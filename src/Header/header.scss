@@ -1,0 +1,52 @@
+/*  header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--background-color);
+  box-shadow: 0rem 0.125rem 0.5rem rgba(0, 0, 0, 0.15);
+
+  .navbar {
+    margin: auto;
+    max-width: 105rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem;
+
+    .logo {
+      font-size: 3.5rem;
+      font-weight: bold;
+      transition: 0.5s;
+      color: var(--primary-color);
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    .menuItems {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .menuItem {
+        font-size: 2rem;
+        margin-left: 1.6rem;
+        padding: 0.8rem 2.4rem;
+        font-weight: 600;
+        color: var(--grey);
+        transition: 0.5s ease-in-out;
+
+        &:hover,
+        &.active {
+          color: var(--white);
+          background-color: var(--primary-color);
+          border-radius: 1.6rem;
+        }
+      }
+    }
+  }
+}

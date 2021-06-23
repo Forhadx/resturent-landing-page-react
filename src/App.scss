@@ -1,0 +1,34 @@
+:root {
+  --primary-color: #0f9d58;
+  --background-color: #f0f3f7;
+  --secon-color: #9da2ad;
+  --grey: #7a7a7b;
+  --white: #ffffff;
+}
+
+/* re usable class */
+
+.container {
+  margin: auto;
+  max-width: 105rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colorGrey {
+  color: var(--grey);
+}
+
+.bgImg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.bgImgFixed {
+  background-attachment: fixed;
+}

@@ -1,0 +1,40 @@
+/* about */
+.about {
+  height: 100vh;
+
+  .aboutContainer {
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+
+    .aboutContainerImg {
+      width: 60%;
+      height: 70%;
+      border-radius: 3rem;
+    }
+
+    .aboutContainerDetails {
+      width: 40%;
+      text-align: center;
+      background-color: var(--white);
+      border-radius: 3rem;
+      transform: translateX(-10rem);
+      box-shadow: 0rem 0.44rem 1.81rem 0rem rgba(100, 100, 111, 0.2);
+
+      & h1 {
+        font-size: 3rem;
+        color: var(--primary-color);
+        margin: 5rem 3rem 2rem 3rem;
+      }
+
+      & p {
+        font-size: 1.7rem;
+        color: var(--grey);
+        margin: 5rem 3rem 2rem 3rem;
+      }
+    }
+  }
+}

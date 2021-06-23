@@ -1,0 +1,53 @@
+.contact {
+  .contactHeader {
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-top: 5rem;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 7rem;
+      margin: 1rem auto;
+      height: 0.3rem;
+      background: var(--primary-color);
+    }
+  }
+
+  .contactAddress {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .contactAddressDetails {
+      background-color: var(--white);
+      width: 20rem;
+      height: 15rem;
+      box-shadow: 0rem 0.125rem 0.5rem rgba(0, 0, 0, 0.15);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 3rem 0;
+      margin: 2rem 2rem;
+      border-radius: 1rem;
+
+      & h1 {
+        font-size: 2rem;
+        color: var(--grey);
+      }
+
+      & p {
+        font-size: 1.5rem;
+        color: black;
+      }
+    }
+  }
+}

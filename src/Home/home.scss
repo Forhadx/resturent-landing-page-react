@@ -1,0 +1,59 @@
+/* home */
+.home {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .homeVideoIntro {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .homeDetails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .slogan {
+      width: 100%;
+      margin: auto;
+      padding-top: 20vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & h1 {
+        font-size: 14rem;
+        letter-spacing: 5rem;
+        color: var(--primary-color);
+        text-transform: uppercase;
+      }
+
+      & p {
+        font-size: 4rem;
+        color: var(--white);
+        margin-bottom: 4rem;
+      }
+
+      & button {
+        font-size: 4rem;
+        color: var(--white);
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border: 0.3rem solid var(--primary-color);
+        border-radius: 3rem;
+        padding: 0.8rem 2rem;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background-color: var(--primary-color);
+        }
+      }
+    }
+  }
+}

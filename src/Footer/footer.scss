@@ -1,0 +1,28 @@
+.footer {
+  .footerInfo {
+    padding: 15rem 5rem 10rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & h1 {
+      font-size: 2rem;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+    & p {
+      font-size: 1.6rem;
+      color: rgb(216, 216, 216);
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+    }
+
+    .license {
+      font-size: 1.6rem;
+      color: white;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+  }
+}
