@@ -21,7 +21,7 @@ const Home = () => {
               <h1>SNACK</h1>
               <p>Try the best food of the week.</p>
               <div>
-                <button>Order Now</button>
+                <a href="https://www.foodpanda.com.bd/"><button>Order Now</button></a>
               </div>
             </div>
           </div>
