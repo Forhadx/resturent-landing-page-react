@@ -9,11 +9,13 @@ import Testimonial from "./Testimonials/Testimonial";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
 
+import Bla from './bla';
 import "./App.scss";
 
 const App = () => {
   return (
     <div>
+      
       <Route path="/" component={Header} />
       <Route path="/" component={Home} />
       <Route path="/" component={About} />

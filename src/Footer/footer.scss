@@ -1,3 +1,5 @@
+@import "../index.scss";
+
 .footer {
   .footerInfo {
     padding: 15rem 5rem 10rem 5rem;
@@ -5,6 +7,20 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    @include respond(phone) {
+      justify-content: center;
+      padding: 3rem 1rem ;
+    }
+
+    .footerDetails {
+      @include respond(phone) {
+        margin-bottom: 2rem;
+        width: 50%;
+      }
+    }
 
     & h1 {
       font-size: 2rem;
@@ -17,12 +33,15 @@
       margin-bottom: 0.5rem;
       cursor: pointer;
     }
+  }
+  .license {
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
 
-    .license {
-      font-size: 1.6rem;
-      color: white;
-      text-align: center;
-      padding-bottom: 1rem;
+    @include respond(phone){
+      padding-bottom: 7rem;
     }
   }
 }

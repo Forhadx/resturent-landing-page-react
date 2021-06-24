@@ -1,3 +1,5 @@
+@import './index.scss';
+
 :root {
   --primary-color: #0f9d58;
   --background-color: #f0f3f7;
@@ -11,6 +13,16 @@
 .container {
   margin: auto;
   max-width: 105rem;
+
+  @include respond(phone){
+    width: 100%;
+  }
+  @include respond(port){
+    width: 100%;
+  }
+  @include respond(land){
+    width: 100%;
+  }
 }
 
 .row {
@@ -32,3 +44,5 @@
 .bgImgFixed {
   background-attachment: fixed;
 }
+
+

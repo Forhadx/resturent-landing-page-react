@@ -1,3 +1,5 @@
+@import "../index.scss";
+
 /*  header */
 .header {
   position: fixed;
@@ -32,6 +34,13 @@
       align-items: center;
       justify-content: center;
 
+      @include respond(phone) {
+        display: none;
+      }
+      @include respond(port) {
+        display: none;
+      }
+
       .menuItem {
         font-size: 2rem;
         margin-left: 1.6rem;
@@ -47,6 +56,34 @@
           border-radius: 1.6rem;
         }
       }
+    }
+  }
+}
+
+.mobileNavbar{
+  display: none;
+
+  @include respond(phone){
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    
+  box-shadow: 0rem 0.125rem 0.5rem rgba(0, 0, 0, 0.15);
+
+    .mobileItems{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mobileItem{
+      color: var(--grey);
+      font-size: 3rem;  
+      padding: 1rem;
     }
   }
 }

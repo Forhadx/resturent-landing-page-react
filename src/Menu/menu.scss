@@ -1,3 +1,5 @@
+@import '../index.scss';
+
 /* menu */
 
 .foodMenuContainer {
@@ -10,10 +12,19 @@
   background-color: var(--white);
   border-radius: 5rem;
 
+  @include respond(phone){
+    padding: 3rem;
+  }
+
   .foodMenuContainerHeader {
     font-size: 3.5rem;
     color: var(--primary-color);
     margin: 3rem 0;
+
+    @include respond(phone){
+      font-size: 2.5rem;
+      margin: 2rem 0;
+    }
   }
 
   .foodMenuContainerList {
@@ -34,6 +45,12 @@
       transition: 0.3s ease-in-out;
       cursor: pointer;
 
+      @include respond(phone){
+        font-size: 1.4rem;
+        padding: .8rem 1.6rem;
+        margin-bottom: 1rem;
+      }
+
       &:hover {
         background-color: var(--primary-color);
         color: var(--white);
@@ -49,13 +66,21 @@
     width: 100%;
 
     .foodMenuDetails {
-      width: 30%;
+      max-width: 20rem;
+      min-width: 10rem;
       height: 35rem;
+      margin-right: 1rem;
       overflow: hidden;
       border-radius: 3rem;
       box-shadow: 0rem 0.125rem 0.5rem rgba(0, 0, 0, 0.15);
       margin-bottom: 3rem;
       text-align: center;
+
+      @include respond(phone){
+        min-width: none;
+        width: 40%;
+        margin-right: 0;
+      }
 
       &:hover {
         box-shadow: 0rem 0.125rem 0.25rem 0rem rgba(14, 30, 37, 0.12),
@@ -63,7 +88,7 @@
       }
 
       .foodMenuImg {
-        height: 25rem;
+        height: 70%;
         width: 100%;
         border-radius: 3rem;
         overflow: hidden;

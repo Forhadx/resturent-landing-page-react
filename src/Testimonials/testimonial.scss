@@ -1,9 +1,15 @@
+@import "../index.scss";
+
 /* testimonials */
 .testimonialsHeader {
   text-align: center;
   font-size: 3.5rem;
   color: var(--primary-color);
   margin-top: 5rem;
+
+  @include respond(phone){
+    font-size: 2.5rem;
+  }
 
   &::after {
     content: "";
@@ -13,9 +19,7 @@
     width: 7rem;
     background: var(--primary-color);
   }
-  
 }
-
 
 .testimonialsAll {
   width: 100%;
@@ -24,6 +28,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+
+  @include respond(phone){
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .testimonialsDetails {
     background-color: var(--white);
@@ -36,10 +45,19 @@
     border-bottom: 3px solid var(--primary-color);
     border-top: 3px solid var(--primary-color);
 
+    @include respond(phone){
+      width: 60%;
+      margin-bottom: 5rem;
+    }
+
     &:hover {
       transform: scale(1.1);
       box-shadow: 0rem 0.125rem 0.25rem 0rem rgba(14, 30, 37, 0.12),
         0rem 0.125rem 1rem 0rem rgba(14, 30, 37, 0.32);
+
+        @media only screen and (max-width: 600px), only screen and (hover: none){
+            transform: none;
+        }
     }
 
     & img {

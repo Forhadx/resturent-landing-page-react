@@ -34,6 +34,120 @@ const Menu = () => {
                 <h1>Big Mac</h1>
                 <p>250 $</p>
               </div>
+
+              <div className="foodMenuDetails">
+                <div className="foodMenuImg">
+                  <img
+                    src="./assets/burger/Big-Mac.jpg"
+                    alt=""
+                    className="bgImg"
+                  />
+                </div>
+                <h1>Big Mac</h1>
+                <p>250 $</p>
+              </div>
+
+
+              <div className="foodMenuDetails">
+                <div className="foodMenuImg">
+                  <img
+                    src="./assets/burger/Big-Mac.jpg"
+                    alt=""
+                    className="bgImg"
+                  />
+                </div>
+                <h1>Big Mac</h1>
+                <p>250 $</p>
+              </div>
+
+
+              <div className="foodMenuDetails">
+                <div className="foodMenuImg">
+                  <img
+                    src="./assets/burger/Big-Mac.jpg"
+                    alt=""
+                    className="bgImg"
+                  />
+                </div>
+                <h1>Big Mac</h1>
+                <p>250 $</p>
+              </div>
+
+
+              <div className="foodMenuDetails">
+                <div className="foodMenuImg">
+                  <img
+                    src="./assets/burger/Big-Mac.jpg"
+                    alt=""
+                    className="bgImg"
+                  />
+                </div>
+                <h1>Big Mac</h1>
+                <p>250 $</p>
+              </div>
+
+
+              <div className="foodMenuDetails">
+                <div className="foodMenuImg">
+                  <img
+                    src="./assets/burger/Big-Mac.jpg"
+                    alt=""
+                    className="bgImg"
+                  />
+                </div>
+                <h1>Big Mac</h1>
+                <p>250 $</p>
+              </div>
+
+
+              <div className="foodMenuDetails">
+                <div className="foodMenuImg">
+                  <img
+                    src="./assets/burger/Big-Mac.jpg"
+                    alt=""
+                    className="bgImg"
+                  />
+                </div>
+                <h1>Big Mac</h1>
+                <p>250 $</p>
+              </div>
+
+              <div className="foodMenuDetails">
+                <div className="foodMenuImg">
+                  <img
+                    src="./assets/burger/Big-Mac.jpg"
+                    alt=""
+                    className="bgImg"
+                  />
+                </div>
+                <h1>Big Mac</h1>
+                <p>250 $</p>
+              </div>
+
+              <div className="foodMenuDetails">
+                <div className="foodMenuImg">
+                  <img
+                    src="./assets/burger/Big-Mac.jpg"
+                    alt=""
+                    className="bgImg"
+                  />
+                </div>
+                <h1>Big Mac</h1>
+                <p>250 $</p>
+              </div>
+
+              <div className="foodMenuDetails">
+                <div className="foodMenuImg">
+                  <img
+                    src="./assets/burger/Big-Mac.jpg"
+                    alt=""
+                    className="bgImg"
+                  />
+                </div>
+                <h1>Big Mac</h1>
+                <p>250 $</p>
+              </div>
+
             </div>
           </div>
         </div>

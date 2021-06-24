@@ -1,30 +1,65 @@
+/*  responsive media  */
+@mixin respond($breakpoint) {
+  @if ($breakpoint == phone) {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == port) {
+    @media (min-width: 37.5em) and (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == land) {
+    @media (min-width: 56.25em) and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == desktop) {
+    @media (min-width: 75em) {
+      @content;
+    }
+  }
+}
+
+
 
 /*  Default define*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  font-size: 50%;
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden;
+
+  @include respond(port) {
+    font-size: 56.25%;
   }
-  
-  html,
-  body {
+  @include respond(land) {
     font-size: 62.5%;
-    background-color: var(--background-color);
-    scroll-behavior: smooth;
-    position: relative;
-    overflow-x: hidden;
   }
-  
+  @include respond(desktop) {
+    font-size: 68.75%;
+  }
+
   a {
     color: unset;
     text-decoration: none;
   }
-  
-  ::selection{
+
+  ::selection {
     background-color: var(--primary-color);
     color: white;
   }
-  
-
-  
+}

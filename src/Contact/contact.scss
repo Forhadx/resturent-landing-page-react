@@ -1,9 +1,15 @@
+@import '../index.scss';
+
 .contact {
   .contactHeader {
     text-align: center;
     font-size: 3.5rem;
     color: var(--primary-color);
     margin-top: 5rem;
+
+    @include respond(phone){
+      font-size: 2.5rem;
+    }
 
     &::after {
       content: "";
@@ -39,6 +45,17 @@
       margin: 2rem 2rem;
       border-radius: 1rem;
 
+      @include respond(phone){
+        width: 40%;
+        margin-right: 0;
+      }
+
+      & h2{
+        font-size: 2.5rem;
+        color: var(--grey);
+        font-weight: bold;
+      }
+    
       & h1 {
         font-size: 2rem;
         color: var(--grey);
@@ -47,6 +64,9 @@
       & p {
         font-size: 1.5rem;
         color: black;
+      }
+      .social{
+        font-size: 2rem;
       }
     }
   }

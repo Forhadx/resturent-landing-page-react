@@ -1,3 +1,5 @@
+@import '../index.scss';
+
 /* home */
 .home {
   height: 100vh;
@@ -30,12 +32,24 @@
         letter-spacing: 5rem;
         color: var(--primary-color);
         text-transform: uppercase;
+
+        @include respond(phone){
+          font-size: 6rem;
+          letter-spacing: normal;
+        }
+        @include respond(port){
+          font-size: 10rem;
+        }
       }
 
       & p {
         font-size: 4rem;
         color: var(--white);
         margin-bottom: 4rem;
+
+        @include respond(phone){
+          font-size: 1.5rem;
+        }
       }
 
       & button {
@@ -49,6 +63,12 @@
         padding: 0.8rem 2rem;
         cursor: pointer;
         transition: 0.3s ease-in-out;
+
+        @include respond(phone){
+          font-size: 3rem;
+          border-radius: 3rem;
+          padding: .6rem 1.5rem;
+        }
 
         &:hover {
           background-color: var(--primary-color);
