@@ -47,13 +47,13 @@
         padding: 0.8rem 2.4rem;
         font-weight: 600;
         color: var(--grey);
+        border-radius: 1.8rem;
         transition: 0.5s ease-in-out;
 
         &:hover,
         &.active {
           color: var(--white);
           background-color: var(--primary-color);
-          border-radius: 1.6rem;
         }
       }
     }

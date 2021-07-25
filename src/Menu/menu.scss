@@ -1,4 +1,4 @@
-@import '../index.scss';
+@import "../index.scss";
 
 /* menu */
 
@@ -12,7 +12,7 @@
   background-color: var(--white);
   border-radius: 5rem;
 
-  @include respond(phone){
+  @include respond(phone) {
     padding: 3rem;
   }
 
@@ -21,7 +21,7 @@
     color: var(--primary-color);
     margin: 3rem 0;
 
-    @include respond(phone){
+    @include respond(phone) {
       font-size: 2.5rem;
       margin: 2rem 0;
     }
@@ -45,9 +45,9 @@
       transition: 0.3s ease-in-out;
       cursor: pointer;
 
-      @include respond(phone){
+      @include respond(phone) {
         font-size: 1.4rem;
-        padding: .8rem 1.6rem;
+        padding: 0.8rem 1.6rem;
         margin-bottom: 1rem;
       }
 
@@ -68,7 +68,7 @@
     .foodMenuDetails {
       max-width: 20rem;
       min-width: 10rem;
-      height: 35rem;
+      height: 30rem;
       margin-right: 1rem;
       overflow: hidden;
       border-radius: 3rem;
@@ -76,7 +76,7 @@
       margin-bottom: 3rem;
       text-align: center;
 
-      @include respond(phone){
+      @include respond(phone) {
         min-width: none;
         width: 40%;
         margin-right: 0;
@@ -88,7 +88,7 @@
       }
 
       .foodMenuImg {
-        height: 70%;
+        height: 60%;
         width: 100%;
         border-radius: 3rem;
         overflow: hidden;
