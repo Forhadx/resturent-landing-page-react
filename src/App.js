@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-
+import { FiPhone } from "react-icons/fi";
 import Header from "./Header/Header";
 import Home from "./Home/Home";
 import About from "./About/About";
@@ -22,6 +22,9 @@ const App = () => {
       <Route path="/" component={Contact} />
       <Route path="/" component={Footer} />
       <Redirect to="/" />
+      <button className="fab">
+        <FiPhone className="fabImg" />
+      </button>
     </div>
   );
 };

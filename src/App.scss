@@ -1,4 +1,4 @@
-@import './index.scss';
+@import "./index.scss";
 
 :root {
   --primary-color: #0f9d58;
@@ -14,13 +14,13 @@
   margin: auto;
   max-width: 105rem;
 
-  @include respond(phone){
+  @include respond(phone) {
     width: 100%;
   }
-  @include respond(port){
+  @include respond(port) {
     width: 100%;
   }
-  @include respond(land){
+  @include respond(land) {
     width: 100%;
   }
 }
@@ -45,4 +45,30 @@
   background-attachment: fixed;
 }
 
+.fab {
+  display: none;
 
+  .fabImg {
+    font-size: 4rem;
+    bottom: 10rem;
+    right: 3rem;
+  }
+
+  @include respond(phone) {
+    display: block;
+    bottom: 10rem;
+    right: 3rem;
+    background-color: var(--primary-color);
+    width: 8rem;
+    height: 8rem;
+    position: fixed;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.3s;
+    z-index: 999;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}
