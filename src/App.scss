@@ -1,4 +1,4 @@
-@import './index.scss';
+@import "./index.scss";
 
 :root {
   --primary-color: #0f9d58;
@@ -14,13 +14,13 @@
   margin: auto;
   max-width: 105rem;
 
-  @include respond(phone){
+  @include respond(phone) {
     width: 100%;
   }
-  @include respond(port){
+  @include respond(port) {
     width: 100%;
   }
-  @include respond(land){
+  @include respond(land) {
     width: 100%;
   }
 }
@@ -45,4 +45,20 @@
   background-attachment: fixed;
 }
 
+.Top-of-the-page {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  z-index: 10;
 
+  @include respond(phone) {
+    bottom: 8rem;
+  }
+  @include respond(port) {
+    bottom: 8rem;
+  }
+}

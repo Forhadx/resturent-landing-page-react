@@ -8,12 +8,22 @@ import Menu from "./Menu/Menu";
 import Testimonial from "./Testimonials/Testimonial";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
+import { FaArrowAltCircleUp } from "react-icons/fa";
 
 import "./App.scss";
 
 const App = () => {
+  const topOfThePagehander = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
   return (
     <div>
+      <FaArrowAltCircleUp
+        className="Top-of-the-page"
+        onClick={topOfThePagehander}
+      />
+
       <Route path="/" component={Header} />
       <Route path="/" component={Home} />
       <Route path="/" component={About} />
